@@ -1,35 +1,43 @@
-<?php
-
-/*
- * This file is part of the Symfony package.
- *
- * (c) Fabien Potencier <fabien@symfony.com>
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
-namespace Symfony\Component\Mime\Tests;
-
-use PHPUnit\Framework\TestCase;
-use Symfony\Component\Mime\RawMessage;
-
-class RawMessageTest extends TestCase
-{
-    public function testToString()
-    {
-        $message = new RawMessage('string');
-        $this->assertEquals('string', $message->toString());
-        $this->assertEquals('string', implode('', iterator_to_array($message->toIterable())));
-        // calling methods more than once work
-        $this->assertEquals('string', $message->toString());
-        $this->assertEquals('string', implode('', iterator_to_array($message->toIterable())));
-
-        $message = new RawMessage(new \ArrayObject(['some', ' ', 'string']));
-        $this->assertEquals('some string', $message->toString());
-        $this->assertEquals('some string', implode('', iterator_to_array($message->toIterable())));
-        // calling methods more than once work
-        $this->assertEquals('some string', $message->toString());
-        $this->assertEquals('some string', implode('', iterator_to_array($message->toIterable())));
-    }
-}
+entage="100" />
+						</Size>
+						<Translation>
+							<X percentage="30" />
+						</Translation>
+					</LayoutConfiguration>
+					<LayoutConfiguration name="Landscape">
+						<Size forceUniform="true">
+							<Width percentage="28" />
+						</Size>
+						<Translation>
+							<X percentage="30" />
+						</Translation>
+					</LayoutConfiguration>
+					<Rotation x="0" y="0" z="0" />
+					<Scale x="1" y="1" z="1" />
+					<Translation x="0" y="0" z="4" />
+					<SceneObject name="TopLeft">
+						<LayoutConfiguration name="Portrait" />
+						<LayoutConfiguration name="Landscape" />
+						<Translation x="0" y="0" z="0" />
+						<Rotation x="0" y="0" z="0" />
+						<Scale x="1" y="1" z="1" />
+					</SceneObject>
+					<SceneObject name="BottomRight">
+						<LayoutConfiguration name="Portrait">
+							<Translation>
+								<X percentage="50" />
+								<Y percentage="50" />
+							</Translation>
+						</LayoutConfiguration>
+						<LayoutConfiguration name="Landscape">
+							<Translation>
+								<X percentage="50" />
+								<Y percentage="50" />
+							</Translation>
+						</LayoutConfiguration>
+						<Rotation x="0" y="0" z="0" />
+						<Scale x="1" y="1" z="1" />
+						<Translation x="0" y="0" z="0" />
+					</SceneObject>
+					<SceneObject name="ContentBegin">
+						<Rotation x="0" y="

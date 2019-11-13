@@ -1,31 +1,27 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:noNamespaceSchemaLocation="http://schema.phpunit.de/5.2/phpunit.xsd"
-         backupGlobals="false"
-         colors="true"
-         bootstrap="vendor/autoload.php"
-         failOnRisky="true"
-         failOnWarning="true"
->
-    <php>
-        <ini name="error_reporting" value="-1" />
-    </php>
-
-    <testsuites>
-        <testsuite name="Symfony MIME Component Test Suite">
-            <directory>./Tests/</directory>
-        </testsuite>
-    </testsuites>
-
-    <filter>
-        <whitelist>
-            <directory>./</directory>
-            <exclude>
-                <directory>./Resources</directory>
-                <directory>./Tests</directory>
-                <directory>./vendor</directory>
-            </exclude>
-        </whitelist>
-    </filter>
-</phpunit>
+55" b="255" g="255" r="255" />
+							</Outline>
+							<Shadow enabled="true">
+								<Color a="255" b="255" g="255" r="255" />
+								<Offset x="2" y="2" />
+							</Shadow>
+							<Size x="32" y="32" />
+							<TextString>9999</TextString>
+						</Text>
+						<Translation x="132" y="58.180690765" z="10" />
+					</SceneObject>
+					<SceneObject name="fx">
+						<Effect effectData="twinkle_bank_effect" name="EvilSpawnerHealed" play="true" />
+						<Scale x="0.5" y="0.5" />
+						<Translation x="71.019989014" y="31.117179871" z="5" />
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="panel_group_collected2">
+			<Anchor>
+				<Anchors>
+					<Anchor point="Top" />
+				</Anchors>
+			</Anchor>
+			<Animation name="OnAppear" animationData="SlideInFromTop" loopCount="0" />
+			<Animation name="OnDisappear" animationData="SlideOutToT

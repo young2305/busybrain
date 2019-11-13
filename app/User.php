@@ -9,31 +9,30 @@ use Illuminate\Notifications\Notifiable;
 class User extends Authenticatable
 {
     use Notifiable;
+    protected $fillable = ['id','nom','prenom','date_nais','email','vef_email','pays','ville','address','numero','usser','password','passgener','token','isadmin','solde','maxmontant','avatar','remember_token','pourcentange'];
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array
-     */
-    protected $fillable = [
-        'name', 'email', 'password',
-    ];
 
-    /**
-     * The attributes that should be hidden for arrays.
+    /*
+     * Cet mutatteur permet de crypter le mot de passe avant de l'envoie dans la base de données
      *
-     * @var array
+     * @return string
      */
+    public function setPasswordAttribute($value){
+         return $this->attributes['password'] = bcrypt($value);
+        }
+
+
+    /*
+     * Cette function convertir l'email en miniscule avent d'uploader dans la base de données
+     *
+     * @return string
+     */
+    public function setEmailAttribute($value){
+        return $this->attributes['email'] = strtolower($value);
+    }
+
+
     protected $hidden = [
-        'password', 'remember_token',
-    ];
-
-    /**
-     * The attributes that should be cast to native types.
-     *
-     * @var array
-     */
-    protected $casts = [
-        'email_verified_at' => 'datetime',
+        'id','password' ,'passgener', 'remember_token','isadmin','maxmontant','vef_email'
     ];
 }

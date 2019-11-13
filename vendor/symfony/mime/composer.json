@@ -1,39 +1,30 @@
-{
-    "name": "symfony/mime",
-    "type": "library",
-    "description": "A library to manipulate MIME messages",
-    "keywords": ["mime", "mime-type"],
-    "homepage": "https://symfony.com",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Fabien Potencier",
-            "email": "fabien@symfony.com"
-        },
-        {
-            "name": "Symfony Community",
-            "homepage": "https://symfony.com/contributors"
-        }
-    ],
-    "require": {
-        "php": "^7.1.3",
-        "symfony/polyfill-intl-idn": "^1.10",
-        "symfony/polyfill-mbstring": "^1.0"
-    },
-    "require-dev": {
-        "egulias/email-validator": "^2.1.10",
-        "symfony/dependency-injection": "~3.4|^4.1"
-    },
-    "autoload": {
-        "psr-4": { "Symfony\\Component\\Mime\\": "" },
-        "exclude-from-classmap": [
-            "/Tests/"
-        ]
-    },
-    "minimum-stability": "dev",
-    "extra": {
-        "branch-alias": {
-            "dev-master": "4.3-dev"
-        }
-    }
-}
+centage="-50" />
+					</Translation>
+					<Size>
+						<OriginalSize width="870" height="768" />
+						<Height percentage="80" max="1200" />
+					</Size>
+				</LayoutConfiguration>
+				<LayoutConfiguration name="Portrait">
+					<Translation>
+						<Y percentage="-50" />
+					</Translation>
+					<Size>
+						<Height percentage="70" max="1500" />
+						<OriginalSize height="1100" width="0" />
+					</Size>
+				</LayoutConfiguration>
+				<Translation z="100" />
+				<SceneObject name="panel">
+					<Material name="TopBarMapMaterial" version="0.0">
+						<Color a="38" b="255" g="255" r="255" />
+						<Light shininess="95">
+							<Ambient a="255" b="0" g="14" r="9" />
+						</Light>
+						<Shader program="StripeShader" />
+					</Material>
+					<Sprite filename="tex/menu/topbar_map_middle.png" mode="panel" vertexColors="false" version="0.0">
+						<Insets bottom="160" left="21" right="6" top="2" />
+						<Pivot anchor="top" />
+						<Size height="200" width="2032" />
+						<RemoveQuads topLef

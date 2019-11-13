@@ -11,6 +11,19 @@
 |
 */
 
+/*
 Route::get('/', function () {
     return view('welcome');
+});*/
+
+
+//Groupe pour les gections des different partie
+Route::group(['middleware' => ['Admin'], 'namespace' => 'Admin' ], function(){
+	require_once __DIR__ . '/admin.php';
 });
+
+Route::group(['middleware' => ['User'], 'namespace' => 'User' ], function(){
+	require_once __DIR__ . '/user.php';
+});
+
+	require_once __DIR__ . '/guest.php';
